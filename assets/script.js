@@ -6,6 +6,8 @@ var questionEl = document.getElementById('questions');
 var answerEl = document.getElementById('answers');
 
 
+
+
 function startTimer() {
     var timeLeft = 180;
     setInterval(function () {
@@ -24,55 +26,80 @@ function startTimer() {
 
 function startGame() {
     console.log("game started");
+var i = 0;
+questionEl.innerHTML= newQuestion[i].question;
+answerEl.innerHTML=
+'<button class="btn1">'+ newQuestion[i].answers[0] +'</button>'
+        + '<button class="btn2">'+ newQuestion[i].answers[1] +'</button>'
+        + '<button class="btn3">'+ newQuestion[i].answers[2] +'</button>'
+        + '<button class="btn4">'+ newQuestion[i].answers[3] +'</button>';
+for (i=0; i <newQuestion.length; i++) {
+     
+        
 
-questionEl.innerHTML= newQuestion.question;
-
-};
-
-var newQuestion = [
-    {
-    question:'What are the 3 core technologies in web development?',
-    answers: [
-        { text: 'javascript, CSS, & HTML', correct: true },
-        { text: 'HTML & CSS', correct: false },
-        { text: 'Node, React, & Express', correct: false },
-        { text: 'None of the Above', correct: false}
-    ]
 }
-];
-
-//     question: 'What answer properly describes the for each method?'
-//     answers: [
-//         { text: 'for each will execute a function for each element in an array', correct: true },
-//         { text: 'will not execute the fucntion for each element', correct: false },
-//         { text: 'will concatenate each element in the array', correct: false },
-//         { text: 'none of the above', correct: false }];
-
-//     question: 'What is javascript?'
-// answers: [
-//         { text: 'kansgldn', correct: false }
-//     { text: 'kansgldn', correct: false }
-//     { text: 'kansgldn', correct: true }
-//     { text: 'kansgldn', correct: false }
-
-//     question: 'What are the benefits of javascript?'
-// answers: [
-//             { text: 'versatile', correct: false },
-//             { text: 'makes it more dynamic for the user', correct: false },
-//             { text: 'can be used for client and server side', correct: false },
-//             { text: 'all of the above', correct: true },
-
-//             question: 'Which are commonly used data types?'
-// answers: [
-//                 { text: 'object', correct: false },
-//                 { text: 'string', correct: false },
-//                 { text: 'boolean', correct: false },
-//                 { text: 'all of the above', correct: true }
 
 
-//             ]
 
-//   }
 
-// ];
+    };
+
+    var newQuestion = [ 
+    {
+    
+    numb: 1,
+    question: 'What are the 3 core technologies in web development?',
+    correct: 'javascript, CSS, & HTML',
+    answers: [
+        'javascript, CSS, & HTML', 
+        'HTML & CSS',
+        'Node, React, & Express',
+        'None of the Above',
+       
+    ]},
+{
+
+    numb: 2,
+    question: 'What answer properly describes the for each method?',
+    correct: 'for each will execute a function for each element in an array',
+    answers: [
+        'for each will execute a function for each element in an array',
+        'will not execute the fucntion for each element',
+        'will concatenate each element in the array',
+        'none of the above',
+    ]},
+{
+    numb: 3,
+    question: 'What is javascript?',
+    correct: 'kansgldn',
+    answers: [
+        'kansgldn',
+        'kansgldn',
+        'kansgldn',
+        'kansgldn',
+]},
+{
+    numb: 4,
+    question: 'What are the benefits of javascript?',
+    correct: 'all of the above',
+    answers: [
+            'versatile',
+            'makes it more dynamic for the user',
+            'can be used for client and server side',
+            'all of the above',
+]},
+{
+    numb: 5,
+    question: 'Which are commonly used data types?',
+    correct: 'all of the above',
+    answers: [
+            'object',
+            'string',
+            'boolean',
+            'all of the above',
+
+
+            ]
+
+  }];
 
