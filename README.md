@@ -18,7 +18,8 @@ Screenshot:
 image.png
 
 
-Deployed Link:
+Deployed Link: https://ebonyrford.github.io/meep-meep/
 
-GitHub URL: https://github.com/EbonyRFord/javascript-speed-round
+
+GitHub URL: https://github.com/EbonyRFord/meep-meep
 
