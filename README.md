@@ -15,8 +15,7 @@ The game will end when all questions are answered or when the timer reaches zero
 
 Screenshot:
 
-image.png
-
+<img width="591" alt="Screen Shot 2023-05-14 at 11 44 06 PM" src="https://github.com/EbonyRFord/meep-meep/assets/126352317/c22102d5-6c6d-403e-9765-2434987f2596">
 
 Deployed Link:
 
